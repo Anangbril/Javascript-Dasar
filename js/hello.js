@@ -28,8 +28,12 @@ document.writeln("<br>");
 document.writeln(fullName);
 
 // add const
-document.writeln("<br><br><br>");
 const application = "belajar aplikasi dasar javascript";
-application = "error"; //error
+// application = "error"; //error
 document.writeln(application);
+
+//operator matematika
+document.writeln("<br><br><br>");
+document.writeln(3 ** 2); //eksponensial atau pangkat
+
 
