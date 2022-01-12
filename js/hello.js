@@ -42,4 +42,23 @@ console.warn("ini console warn");
 console.error("ini console error");
 console.debug("ini debug");
 
+//String template
+const template = `Name = ${fullName}`;
+const no = 76;
+
+document.writeln("<br>" + template);
+console.info(fullName);
+console.info(`${no > 76}`);
+
+//multiline template
+const template2 = `nama saya anang,
+saya bekerja di mitra integrasi informatika,
+saya bekerja sebagai aplication developer progaraming,
+umur saya 25 tahun`;
+
+document.writeln("<pre>");
+document.writeln(template2);
+document.writeln("</pre>");
+
+
 
