@@ -36,4 +36,10 @@ document.writeln(application);
 document.writeln("<br><br><br>");
 document.writeln(3 ** 2); //eksponensial atau pangkat
 
+//console
+console.info("ini console info");
+console.warn("ini console warn");
+console.error("ini console error");
+console.debug("ini debug");
+
 
