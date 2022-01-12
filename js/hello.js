@@ -6,26 +6,3 @@ document.writeln(true);
 document.writeln("<br>");
 document.writeln(false);
 
-//membuat variable
-var fullName;
-var lastName;
-var isActive;
-var age;
-
-// mengisi langsung value pada variable
-fullName = "LM. ANANG BRILYANSYAH ";
-age = 25;
-isActive = true;
-
-var alamat = "jln swadaya" + " " + "Condongcatur";
-
-// mengakses variable berkali kali
-document.writeln("<br>");
-document.writeln(fullName);
-
-fullName = "brilyansyah";
-document.writeln("<br>");
-document.writeln(fullName);
-
-
-
