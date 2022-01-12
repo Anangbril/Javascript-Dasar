@@ -60,5 +60,26 @@ document.writeln("<pre>");
 document.writeln(template2);
 document.writeln("</pre>");
 
+// conversi bilangan 
+const val1 = "1";
+const val2 = 1;
+
+const sum = val1 + val2;
+const sum2 = parseInt(val1) + val2;
+document.writeln("<pre>");
+document.writeln(sum);
+document.writeln(sum2);
+document.writeln(parseInt(15.7));
+document.writeln("</pre>");
+
+const a = 3;
+const b = 5;
+const total2 = a + b;
+const total = a.toString() + b.toString();
+document.writeln("<pre>");
+document.writeln(`${total}`);
+document.writeln(`${total2}`);
+document.writeln("</pre>");
+
 
 
