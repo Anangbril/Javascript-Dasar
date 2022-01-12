@@ -27,5 +27,9 @@ fullName = "brilyansyah";
 document.writeln("<br>");
 document.writeln(fullName);
 
-
+// add const
+document.writeln("<br><br><br>");
+const application = "belajar aplikasi dasar javascript";
+application = "error"; //error
+document.writeln(application);
 
