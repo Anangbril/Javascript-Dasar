@@ -19,3 +19,9 @@ if (nilai == "A") {
 } else {
     document.writeln("nilai anda tidak baik");
 }
+
+//typeOf
+let data = null;
+
+const dataType = typeof data;
+document.writeln(` <br> tipe data dari variable data : ${dataType}`);
