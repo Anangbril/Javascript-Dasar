@@ -37,10 +37,10 @@ document.writeln("<br><br><br>");
 document.writeln(3 ** 2); //eksponensial atau pangkat
 
 //console
-console.info("ini console info");
-console.warn("ini console warn");
-console.error("ini console error");
-console.debug("ini debug");
+// console.info("ini console info");
+// console.warn("ini console warn");
+// console.error("ini console error");
+// console.debug("ini debug");
 
 //String template
 const template = `Name = ${fullName}`;
@@ -80,6 +80,23 @@ document.writeln("<pre>");
 document.writeln(`${total}`);
 document.writeln(`${total2}`);
 document.writeln("</pre>");
+
+// array
+let name1 = [];
+name1.push("anang");
+name1.push("rico", "agung", 0, "anas", "mba anin");
+let name = ["anang", "rico", "agung"];
+//array multidimensi
+name1.push(["yos", "bintang", "yoga"]);
+document.writeln("<pre>");
+document.writeln(`${name1}`);
+document.writeln(`${name}`);
+document.writeln(`${name1.length}`);
+
+console.table(name1);
+console.info(name1[4]);
+document.writeln("</pre>");
+
 
 
 
