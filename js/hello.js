@@ -1,9 +1,15 @@
-//if expression
-const value = 90;
-if (value < 10) {
-    document.writeln("kondisi benar");
-} else if (value < 100) {
-    document.writeln("<h1>Ini percabangan if else</h1>")
+// pop up allert
+alert("this is allert");
+
+//pop up prompt
+const nama = prompt("siapa nama anda ?");
+alert(`Hello ${nama}`);
+
+//pop up confirm
+const masuk = confirm("apakah anda ingin masuk ?");
+if (masuk) {
+    const name = prompt("siapa nama anda ?");
+    alert(`selamat datang ${name}`);
 } else {
-    document.writeln("<h1>Ini percabangan else</h1>")
+    alert("terima kasih sudah berkunjung");
 }
