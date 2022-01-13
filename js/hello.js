@@ -1,10 +1,21 @@
-//tipe data null
-let fullName = null;
-
-if (fullName === undefined) {
-    alert("Undefined");
-} else if (fullName === null) {
-    alert("null");
+// switch expression
+const nilai = "A";
+switch (nilai) {
+    case "A":
+        document.writeln("nilai anda sangat baik");
+        break;
+    case "B":
+    case "C":
+        document.writeln("nilai anda Cukup");
+        break;
+    default:
+        document.writeln("nilai anda tidak baik");
+}
+document.write("<br>")
+if (nilai == "A") {
+    document.writeln("nilai anda sangat baik");
+} else if (nilai == "B" || nilai == "B") {
+    document.writeln("nilai anda Cukup");
 } else {
-    alert("not both of them")
+    document.writeln("nilai anda tidak baik");
 }
