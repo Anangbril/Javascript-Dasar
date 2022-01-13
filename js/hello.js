@@ -1,26 +1,21 @@
-// TERNARY OPERATOR
-const nilai = 60;
-const hasil = nilai >= 70 ? "nilai anda lulus" : "nilai anda tidak lulus"; //ternarry operator
-document.writeln(hasil);
+//OPTIONAL CHAINING
 
+// let object = {};
+// alert(`isi object : ${object.person.nama}`);
 
-//NULLISH COALESCING OPERATOR
-let data;
-let parameter = data;
-if (data === undefined || data == null) { //tidak menggunakan nullish operator
-    alert("data default");
-}
-alert(data);
+let person = {
+    address: {
+        country: "Indonesia Raya"
+    }
+};
+// let country;
+// if (person.address !== undefined && person.address !== null) { //pengecekan menggunakan if
+//     country = person.address.country;
+// }
+alert(person?.address?.country); //using Optional chaining
+// document.writeln(`${country}`);
 
-let parameter;
-let data = parameter ?? "nilai default"; //nullish coalescing
-alert(data);
-
-
-
-
-/**
- * NULLIST value adalah null dan undefined
- * Nullist coalescing operator (??) adalah operator mirip dengan ternary operator, namun yang membedakan adalah
- *      pada kondisi, jika bernilai null atau undefined, baru value defaultnya diambil.
+/**catatan
+ * jika person tidak nullish maka akan di akses addressnya, tanda tanya untuk mengecek atau memastikan apakah person nullish atau tidak
+ * jika address tidak nullish lagi maka akan di akses countrynya
  */
