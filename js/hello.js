@@ -1,15 +1,15 @@
-// pop up allert
-alert("this is allert");
+//undefined is a dataType
+// let name;
+// if (name == undefined) {
+//     alert("undefined");
+// } else {
+//     alert("defined");
+// }
 
-//pop up prompt
-const nama = prompt("siapa nama anda ?");
-alert(`Hello ${nama}`);
-
-//pop up confirm
-const masuk = confirm("apakah anda ingin masuk ?");
-if (masuk) {
-    const name = prompt("siapa nama anda ?");
-    alert(`selamat datang ${name}`);
+//undefined data array value
+const name = ["anang", " Richo", 1];
+if (name[2] == undefined) {
+    alert("data tidak ditemukan");
 } else {
-    alert("terima kasih sudah berkunjung");
+    alert(`data ditemukan ${name[2]}`);
 }
