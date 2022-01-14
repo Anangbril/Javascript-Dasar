@@ -21,3 +21,13 @@ const person = {
 
 const data = person.firstName || person.lastName;
 console.info(data); //Brilyansyah
+
+// OPERATOR AND(&&) di NON BOOLEAN
+/**
+ * operator AND membaca dari kiri kekanan
+ * operator ini akan mengambil nilai pertama yang FALSY
+ * jika tidak ada satupun yang falsy atau kedua nilai bernilai true maka nilai yang terakhir yang akan diambil.
+ */
+console.info("hello" && ""); //kosong
+console.info("" && {}); //kosong
+console.info("0" && "NOL"); //NOL
