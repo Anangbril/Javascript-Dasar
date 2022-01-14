@@ -1,33 +1,37 @@
-// OPERASI OR (||) 
-/**
- * operasi or akan mengambil nilai yang paling kiri jika keduanya berniali benar
- * sebaliknya nilai paling kanan akan diambil jika keduanya bernilai falsy
- * nilai yang di ambil dan dikeluarkan adalah nilai truthy
- */
-console.info("hello" || ""); //hello
-console.info("" || {}); //{}
-console.info("0" || "NOL"); //0
-console.info(0 || "NOL"); //NOL
-console.info(null || "NULL"); //NULL
-console.info(undefined || "UNDEFINED"); //UNDEFINED
-console.info(0 || false); //false
-
-
-
-const person = {
-    firstName: "",
-    lastName: "Brilyansyah"
+//PERULANGAN FOR
+let x = 5;
+for (let index = 0; index <= x; index++) {
+    document.writeln(`Perulangan FOR Ke ${index} <br>`);
 }
 
-const data = person.firstName || person.lastName;
-console.info(data); //Brilyansyah
+//perulangan while
+while (x <= 10) {
+    document.writeln(`ini perulangan WHILE ke ${x} <br>`);
+    x++;
+}
 
-// OPERATOR AND(&&) di NON BOOLEAN
-/**
- * operator AND membaca dari kiri kekanan
- * operator ini akan mengambil nilai pertama yang FALSY
- * jika tidak ada satupun yang falsy atau kedua nilai bernilai true maka nilai yang terakhir yang akan diambil.
- */
-console.info("hello" && ""); //kosong
-console.info("" && {}); //kosong
-console.info("0" && "NOL"); //NOL
+//perulangan DO WHILE
+let y = 100;
+do {
+    document.writeln(`perulangan ke DO WHILE ke ${y} <br>`)
+    y++;
+} while (y <= 110);
+
+//Break dalam perulangan
+let counter = 10;
+while (true) {
+    document.writeln(`perulangan dengan BREAK ke - ${counter} <br>`);
+    counter++;
+    if (counter > 30) {
+        break;
+    }
+}
+
+// continue dalam perulangan
+let genap = 10;
+for (let index = 0; index <= genap; index++) {
+    if (index % 2 === 1) {
+        continue;
+    }
+    document.writeln(`perulangan dengan CONTINUE ke - ${index} <br>`);
+}
