@@ -9,7 +9,6 @@ let person = {
 };
 for (const property in person) {
     document.writeln(`<p> ${property} : ${person[property]}</p>`); //otomatis mengakses sebuah property pada sebuah object
-    console.table(person)
 };
 
 /* FOR OF 
@@ -24,6 +23,20 @@ let fullName = "LM. ANANG BRILYANSYAH";
 for (const full of fullName) {
     document.writeln(`<p> ${full}</p>`); //menampilakn isi setia karakter  pada string
 };
+
+/* WITH STATEMENT 
+memanggil prperty pada object tanpa menyertakan nama objectnya lagi */
+with (person) {
+    console.log(firstName);
+    console.log(lastName);
+    console.log(age);
+    console.log(gender);
+    document.writeln(firstName);
+    document.writeln(lastName);
+    document.writeln(age);
+    document.writeln(gender);
+
+}
 
 
 
