@@ -1,37 +1,29 @@
-//PERULANGAN FOR
-let x = 5;
-for (let index = 0; index <= x; index++) {
-    document.writeln(`Perulangan FOR Ke ${index} <br>`);
-}
+/* FOR IN 
+for in biasanya digunakan untuk iterable dan mengakses sebuah objek atau index pada array */
 
-//perulangan while
-while (x <= 10) {
-    document.writeln(`ini perulangan WHILE ke ${x} <br>`);
-    x++;
-}
+let person = {
+    firstName: "anang",
+    lastName: "brilyansyah",
+    age: 25,
+    gender: "pria"
+};
+for (const property in person) {
+    document.writeln(`<p> ${property} : ${person[property]}</p>`); //otomatis mengakses sebuah property pada sebuah object
+    console.table(person)
+};
 
-//perulangan DO WHILE
-let y = 100;
-do {
-    document.writeln(`perulangan ke DO WHILE ke ${y} <br>`)
-    y++;
-} while (y <= 110);
+/* FOR OF 
+digunakan untuk melakukan iterasi terhadap isi value dari iterable object, seperty array string dll 
+for of tidak bisa digunakan untuk iterasi sebuah object, karena object bukanlah iterable */
+let names = ["anang", "wiwin", "iman"];
+for (const name of names) {
+    document.writeln(`<p> ${name}</p>`); //menampilakn isi dari sebuah array name
+};
 
-//Break dalam perulangan
-let counter = 10;
-while (true) {
-    document.writeln(`perulangan dengan BREAK ke - ${counter} <br>`);
-    counter++;
-    if (counter > 30) {
-        break;
-    }
-}
+let fullName = "LM. ANANG BRILYANSYAH";
+for (const full of fullName) {
+    document.writeln(`<p> ${full}</p>`); //menampilakn isi setia karakter  pada string
+};
 
-// continue dalam perulangan
-let genap = 10;
-for (let index = 0; index <= genap; index++) {
-    if (index % 2 === 1) {
-        continue;
-    }
-    document.writeln(`perulangan dengan CONTINUE ke - ${index} <br>`);
-}
+
+
