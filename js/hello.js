@@ -1,42 +1,41 @@
-/* FOR IN 
-for in biasanya digunakan untuk iterable dan mengakses sebuah objek atau index pada array */
+/* FUNCTION
+ */
 
-let person = {
-    firstName: "anang",
-    lastName: "brilyansyah",
-    age: 25,
-    gender: "pria"
-};
-for (const property in person) {
-    document.writeln(`<p> ${property} : ${person[property]}</p>`); //otomatis mengakses sebuah property pada sebuah object
+function helloWorld() {
+    document.writeln("<P>HALO ANANG</P>");
 };
 
-/* FOR OF 
-digunakan untuk melakukan iterasi terhadap isi value dari iterable object, seperty array string dll 
-for of tidak bisa digunakan untuk iterasi sebuah object, karena object bukanlah iterable */
-let names = ["anang", "wiwin", "iman"];
-for (const name of names) {
-    document.writeln(`<p> ${name}</p>`); //menampilakn isi dari sebuah array name
+helloWorld();
+helloWorld();
+
+/* function with parameter */
+function say(firsName, lastName) {
+    document.writeln(`<P>hello ${firsName} ${lastName}</P>`);
+};
+say("anang", "bril");
+
+
+/* function with return value */
+function name(name1, name2) {
+    const names = `<p>nama1 : ${name1}, nama2 ${name2}</p>`;
+    return names;
 };
 
-let fullName = "LM. ANANG BRILYANSYAH";
-for (const full of fullName) {
-    document.writeln(`<p> ${full}</p>`); //menampilakn isi setia karakter  pada string
-};
+const result = name("anang", "wiwin");
+document.writeln(`${result}`);
 
-/* WITH STATEMENT 
-memanggil prperty pada object tanpa menyertakan nama objectnya lagi */
-with (person) {
-    console.log(firstName);
-    console.log(lastName);
-    console.log(age);
-    console.log(gender);
-    document.writeln(firstName);
-    document.writeln(lastName);
-    document.writeln(age);
-    document.writeln(gender);
-
+/* using return to stop function */
+function isContains(array, searchValue) {
+    for (const element of array) {
+        console.log(`iterasi element ${element}`);
+        if (element === searchValue) {
+            return true;
+        }
+    }
+    return false;
 }
-
-
+const array = [10, 21, 23, 5, 4, 3, 6, 25];
+const searchValue = 4;
+const results = isContains(array, searchValue);
+document.writeln(`${results}`);
 
